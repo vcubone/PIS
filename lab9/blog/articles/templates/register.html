@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+</head>
+<body>
+    <div class="header">
+        <img src="{% static 'img/dpb-logo.png' %}" />
+        <div>
+            <a href="{% url 'register' %}">Регистрация</a>
+            <a href="{% url 'login' %}">Вход</a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>Регистрация</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Имя пользователя">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Пароль">
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+        <p>{{ error }}</p>
+        <a href="{% url 'login' %}">Уже есть аккаунт? Войти</a>
+    </div>
+</body>
+</html>

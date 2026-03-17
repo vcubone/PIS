@@ -1,0 +1,179 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header img {
+    width: 318px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    width: 960px;
+    margin: 0 auto 40px auto;
+}
+
+.left-panel {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-panel {
+    flex: 1;
+    position: relative;
+    height: 400px;
+}
+
+.service-title {
+    font-weight: bold;
+    color: #000000;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.auth-links a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.archive {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.one-post {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.one-post.folded .article-author,
+.one-post.folded .article-created-date,
+.one-post.folded .article-text {
+    display: none;
+}
+
+.one-post-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.article-author {
+    font-weight: bold;
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+    font-style: italic;
+}
+
+.fold-button {
+    background: #16a085;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.fold-button:hover {
+    background: #138d72;
+}
+
+.content {
+    width: 960px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.content input[type="submit"] {
+    width: auto;
+    background: #16a085;
+    border: none;
+    cursor: pointer;
+}
+
+.content p {
+    color: #ffcccc;
+}
+
+.icons-for-parallax {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 530px;
+    position: relative;
+}
+
+.icons-for-parallax img {
+    position: absolute;
+    top: 0;
+}
+
+.icon-for-parallax-first {
+    margin-top: 150px;
+    z-index: 3;
+    width: 100px;
+    margin-left: 100px;
+}
+
+.icon-for-parallax-second {
+    width: 87px;
+    margin-top: 75px;
+    margin-left: 130px;
+    z-index: 2;
+}
+
+.icon-for-parallax-third {
+    width: 75px;
+    margin-left: 160px;
+    margin-top: 0;
+    z-index: 1;
+}

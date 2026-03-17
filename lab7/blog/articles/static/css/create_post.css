@@ -1,0 +1,56 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 318px;
+    margin: 0;
+}
+
+.header a {
+    color: #ffffff;
+    font-size: 27px;
+    text-decoration: underline;
+}
+
+.archive {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.article-author {
+    font-weight: bold;
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+    font-style: italic;
+}
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.content {
+    width: 960px;
+    margin: 50px auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
